@@ -65,26 +65,25 @@
             border-radius: 8px;
             margin-top: 30px;
         }
-        .content h2 {
+        .content h2 { /* Bagian Utama: 1., 2., 3. */
             border-bottom: 2px solid var(--color-primary);
             padding-bottom: 10px;
             margin-top: 40px;
             color: var(--color-primary);
             font-size: 1.8em;
         }
-        .content h3 {
+        .content h3 { /* Sub Bagian: A., B., C. */
             margin-top: 30px;
             color: var(--color-text-light);
             font-size: 1.4em;
             border-left: 4px solid var(--color-text-muted);
             padding-left: 10px;
         }
-        .content h6 {
-            margin-top: 30px;
+        .content h4 { /* Sub-Sub Bagian: Contoh Perhitungan */
+            margin-top: 25px;
             color: var(--color-text-light);
-            font-size: 1.4em;
-            border-left: 4px solid var(--color-text-muted);
-            padding-left: 10px;
+            font-size: 1.1em;
+            text-decoration: underline;
         }
 
         /* Formula dan Kode */
@@ -98,6 +97,13 @@
             color: #dcdcdc;
             font-family: monospace;
             font-size: 0.9em;
+        }
+        /* Style tambahan untuk MathJax (LaTeX) di dalam block */
+        .math-formula .math-display {
+            display: block;
+            text-align: center;
+            font-size: 1.2em;
+            margin: 10px 0;
         }
         
         /* Gambar dan Panorama */
@@ -178,7 +184,7 @@
                 <h2>Pendahuluan</h2>
                 <p>Rumah Adat Balla Lompoa Karaeng Galesong merupakan warisan budaya di Kabupaten Takalar, Sulawesi Selatan, yang berfungsi sebagai simbol identitas masyarakat Galesong dan mencerminkan sistem nilai, struktur sosial, serta pengetahuan arsitektural yang diwariskan turun-temurun.</p>
                 <p>Rumah panggung ini terdiri atas tiga bagian utama yang memiliki makna spiritual: kolong rumah (dunia bawah), ruang tengah (dunia manusia), dan bagian atap (dunia spiritual). Setiap bagian, mulai dari atap, tiang, tangga, hingga tata ruang, menyimpan konsep-konsep matematis seperti geometri, proporsi, kesebangunan, dan keseimbangan.
-                  Sebagai rumah panggung, Balla Lompoa Karaeng Galesong memiliki tiga bagian utama, yaitu Ulu Balla’ (bagian atas), Kale Balla’ (ruang utama), dan Siring (kolong rumah). Masing-masing bagian memiliki makna simbolik yang merepresentasikan hubungan vertikal antara Tuhan, manusia, dan alam. Orientasi rumah menghadap ke utara atau timur, mengikuti filosofi Makassar bahwa arah timur melambangkan sumber kehidupan dan arah utara merupakan arah kembali kepada asal. Filosofi dasar arsitektur ini berlandaskan pada konsep Sulapa’ Appa’, yaitu empat unsur kehidupan (tanah, air, api, dan angin) yang melambangkan keseimbangan kosmos. Keempat unsur tersebut diwujudkan dalam bentuk bangunan yang berpondasi persegi empat. Dengan demikian, rumah adat Balla Lompoa tidak hanya berfungsi sebagai tempat tinggal, tetapi juga mencerminkan pemikiran matematis dan nilai spiritual masyarakat Makassar.
+                    Sebagai rumah panggung, Balla Lompoa Karaeng Galesong memiliki tiga bagian utama, yaitu Ulu Balla’ (bagian atas), Kale Balla’ (ruang utama), dan Siring (kolong rumah). Masing-masing bagian memiliki makna simbolik yang merepresentasikan hubungan vertikal antara Tuhan, manusia, dan alam. Orientasi rumah menghadap ke utara atau timur, mengikuti filosofi Makassar bahwa arah timur melambangkan sumber kehidupan dan arah utara merupakan arah kembali kepada asal. Filosofi dasar arsitektur ini berlandaskan pada konsep Sulapa’ Appa’, yaitu empat unsur kehidupan (tanah, air, api, dan angin) yang melambangkan keseimbangan kosmos. Keempat unsur tersebut diwujudkan dalam bentuk bangunan yang berpondasi persegi empat. Dengan demikian, rumah adat Balla Lompoa tidak hanya berfungsi sebagai tempat tinggal, tetapi juga mencerminkan pemikiran matematis dan nilai spiritual masyarakat Takalar.
                 </p>
             </section>
 
@@ -189,49 +195,57 @@
                 </figure>
             </section>
             
+            <section id="Pembahasan">
+                <h2>2. Pembahasan</h2>
             <section id="simetri-dan-keseimbangan">
-                <h2>1. Simetri, Keseimbangan, dan Filosofi</h2>
+                <h2>2.a Simetri, Keseimbangan, dan Filosofi</h2>
                 <p>Konsep simetri merupakan aspek matematis yang paling menonjol dan berfungsi sebagai landasan struktural dan simbolik. Simetri terlihat dari keseimbangan bentuk dan susunan sisi bangunan.</p>
                 
-                <h3>A. Simetri Struktural</h3>
+                <h3>2.a.1 Simetri Struktural</h3>
                 <ul>
-                  <li>Simetri Lipat Vertikal: Dari tampak depan, ditarik garis lurus dari puncak atap hingga ke tengah tangga utama, sisi kiri dan kanan rumah terlihat serupa. Simetri ini menjaga kestabilan konstruksi dan mendistribusikan beban secara merata.</li>
-                  <li>Pola Tiang: Terdapat 36 tiang kayu utama (6 baris ke samping dan 6 baris ke belakang) yang disusun simetris dalam pola kisi (grid), menunjukkan simetri translasi dan pembagian beban seimbang.Angka 36 melambangkan keseimbangan dan kekuatan.</li>
-                  <li>Tangga (Tuka'): Ditempatkan tepat di tengah rumah, menegaskan simetri vertikal. Tangga memiliki jumlah anak tangga ganjil (yaitu 11), anak tangga berbentuk persegi panjang sejajar. Jumlahnya harus ganjil, karena angka ganjil dianggap membawa keberkahan. Secara matematis, pola anak tangga merepresentasikan deret aritmetika dan konsep kesebangunan persegi panjang.</li>
+                    <li>Simetri Lipat Vertikal: Dari tampak depan, ditarik garis lurus dari puncak atap hingga ke tengah tangga utama, sisi kiri dan kanan rumah terlihat serupa. Simetri ini menjaga kestabilan konstruksi dan mendistribusikan beban secara merata.</li>
+                    <li>Pola Tiang: Terdapat 36 tiang kayu utama (6 baris ke samping dan 6 baris ke belakang) yang disusun simetris dalam pola kisi (grid), menunjukkan simetri translasi dan pembagian beban seimbang. Angka 36 melambangkan keseimbangan dan kekuatan.</li>
+                    <li>Tangga (Tuka'): Ditempatkan tepat di tengah rumah, menegaskan simetri vertikal. Tangga memiliki jumlah anak tangga ganjil (yaitu 11). Jumlahnya harus ganjil, karena angka ganjil dianggap membawa keberkahan. Secara matematis, pola anak tangga merepresentasikan deret aritmetika dan konsep kesebangunan persegi panjang.</li>
                 </ul>
 
-                <h3>B. Keseimbangan Ruang</h3>
+                <h3>2.a.2 Keseimbangan Ruang</h3>
                 <p>Keseimbangan terlihat pada tata ruang dalam rumah (Kale Balla), di mana pembagian ruang depan (paladang), tengah (paddaserang riolo), dan belakang (paddaserang riboko) disusun secara teratur mengikuti fungsi sosial. Secara filosofis, simetri melambangkan keadilan, dan keseimbangan menggambarkan pandangan hidup masyarakat Galesong yang menekankan harmoni.</p>
             </section>
 
             <section id="bangun-datar-dan-ruang">
-                <h2>2. Konsep Geometri (Bangun Datar dan Bangun Ruang)</h2>
+                <h2>2.b Konsep Geometri (Bangun Datar dan Bangun Ruang)</h2>
                 <p>Arsitektur Balla Lompoa dominan menggunakan konsep bangun ruang dan datar.</p>
 
-                <h3>A. Bentuk Segitiga dan Prisma Segitiga (Atap)</h3>
+                <h3>2.b.1 Bentuk Segitiga dan Prisma Segitiga (Atap)</h3>
                 <p>Bentuk atap pelana menyerupai prisma segitiga yang memiliki 5 sisi, 9 rusuk, dan 6 titik sudut. Permukaan atap bagian depan dan belakang berbentuk bangun datar segitiga. Sudut kemiringan atap sekitar 45 derajat dan 50 derajat, ideal untuk aliran air hujan.</p>
                 
                 <h4>Contoh Perhitungan Luas Segitiga (Atap)</h4>
                 <div class="math-formula">
                     <p>Rumus Luas (L) segitiga ABC:</p>
-                    L = 1/2 \times a \times t
+                    <div class="math-display">
+                        L = 1/2 * a * t
+                    </div>
                     <p>Contoh: Jika alas (a) = 12 dan tinggi (t) = 8, maka:</p>
-                    <pre class="pre-code"><code>L = 1/2 * 12 * 8 = 48 </code></pre>
+                    <pre class="pre-code"><code>L = 1/2 * 12 * 8 = 48</code></pre>
                     <p>Luas atap segitiga adalah 48 satuan persegi.</p>
                 </div>
 
-                <h3>B. Bentuk Belah Ketupat (Lasugi)</h3>
-                <p>Lasugi (anyaman dinding) berbentuk bangun datar belah ketupat, sedangkan permukaan badan lasugi berbentuk persegi panjang. Lobang di antara anyaman lasugi juga berbentuk belah ketupat. Lasugi berimpit tiga memiliki makna filosofis di mana kulit bambu melambangkan masyarakat dan tulang bambu melambangkan raja (pemimpin yang merangkul rakyatnya). Secara matematis, pola ini menerapkan pengulangan (repetisi) dan simetri lipat ganda</p>
+                <h3>2.b.2 Bentuk Belah Ketupat (Lasugi)</h3>
+                <p>Lasugi (anyaman dinding) berbentuk bangun datar belah ketupat, sedangkan permukaan badan lasugi berbentuk persegi panjang. Lobang di antara anyaman lasugi juga berbentuk belah ketupat. Lasugi berimpit tiga memiliki makna filosofis di mana kulit bambu melambangkan masyarakat dan tulang bambu melambangkan raja (pemimpin yang merangkul rakyatnya). Secara matematis, pola ini menerapkan pengulangan (repetisi) dan simetri lipat ganda.</p>
                 
                 <h4>Formula Belah Ketupat</h4>
                 <div class="math-formula">
                     <p>Keliling (K) belah ketupat ABCD (s = sisi, d = diagonal):</p>
-                    K = s + s + s + s = 4s
+                    <div class="math-display">
+                        K = s + s + s + s = 4s
+                    </div>
                     <p>Luas (L) belah ketupat ABCD:</p>
-                    L = 1/2 * d_1 * d_2
+                    <div class="math-display">
+                        L = 1/2 * d_1 * d_2
+                    </div>
                 </div>
 
-                <h3>C. Bentuk Persegi Panjang dan Prisma Segi Empat</h3>
+                <h3>2.b.3 Bentuk Persegi Panjang dan Prisma Segi Empat</h3>
                 <p>Bangun datar persegi panjang terdapat pada permukaan anak tangga, lasugi, dan tiang. Penyangga tangga (cocorang) berbentuk balok (prisma segi empat), yang memiliki 6 sisi, 12 rusuk, dan 8 titik sudut.</p>
                 
                 <h4>Contoh Perhitungan Persegi Panjang (Anak Tangga)</h4>
@@ -240,55 +254,102 @@
                     <p>Keliling (K):</p>
                     <pre class="pre-code"><code>K = 2 (p + l) = 2 (1,27 + 0,18) m = 2,9 m</code></pre>
                     <p>Luas (L):</p>
-                    <pre class="pre-code"><code>L = p × l = 1,27 × 0,18 m = 0,2286 m²</code></pre>
+                    <pre class="pre-code"><code>L = p * l = 1,27 * 0,18 m = 0,2286 m²</code></pre>
 
-                <h5>Contoh Perhitungan Prisma Segi Empat</h5>
-                <p>Pada aspek designing (mendesain) menyebutkan bahwa di bagian tangga terdapat penyangga (cocorang) yang berbentuk balok. Diketahui bahwa prisma segi empat 6 sisi, 12 rusuk, 8 titik sudut. Maka,    
-                  Luas (L) permukaan prisma segi empat yaitu:  
-                    L = (2 x L (alas)) + (K (alas) x t)  
-                    L = 2 (s x s) + (4s + t)  
-                  Volume (V) prisma segi empat yaitu:  
-                    V = L (alas) x t (prisma)  
-                    V = s x s x t</p>
+                <h4>Contoh Perhitungan Prisma Segi Empat</h4>
+                <p>Pada aspek desain disebutkan bahwa di bagian tangga terdapat penyangga (cocorang) yang berbentuk balok. Diketahui bahwa prisma segi empat 6 sisi, 12 rusuk, 8 titik sudut.</p>
+                <p>Luas (L) permukaan prisma segi empat:</p>
+                <div class="math-formula">
+                        L = (2 * L(alas)) + (K_(alas) * t_(prisma))
+                    </div>
+                    <p>Volume (V) prisma segi empat:</p>
+                    <div class="math-formula">
+                        V = L_(alas) * t_(prisma) = p * L * t
+                    </div>
                 </div>
 
-                <h6>D. Bentuk Prisma Segidelapan</h6>
-                <p>Pada aspek desain menyebutkan bahwa tiang inti Balla Lompoa Karaeng Galesong berbentuk prisma seg delapan. Hal tersebut berdasarkan jumlah sisi tegaknya sebanyak 8 (delapan). Dari hasil pengamatan bentuknya, tiang inti memuat sifat prisma segidelapan, sehingga dapat diilustrasikan menjadi bentuk prisma segidelapan yang memiliki alas & tinggi.</p>
-                <p>Diketahui bahwa prisma segi delapan terdiri atas 10 sisi, 24 rusuk, dan 16 titik sudut. Maka, Luas (L) permukaan prisma segi delapan yaitu: Karena alas dan tutup kongruen maka,  
+                <h3>2.b.4 Bentuk Prisma Segidelapan</h3>
+                <p>Pada aspek desain disebutkan bahwa tiang inti Balla Lompoa Karaeng Galesong berbentuk prisma segidelapan berdasarkan jumlah sisi tegaknya sebanyak 8 (delapan). Tiang inti memuat sifat prisma segidelapan, sehingga dapat diilustrasikan menjadi bentuk prisma segidelapan yang memiliki alas dan tinggi.</p>
+                <p>Diketahui bahwa prisma segi delapan terdiri atas 10 sisi, 24 rusuk, dan 16 titik sudut.</p>
+                
+                <h4>Formula Prisma Segidelapan</h4>
                 <div class="math-formula">
-                  <p>L = 2 (Luas alas) + (Keliling alas x tinggi prisma)</p>
-                  <pre class="'pre-code"><code>L = 2 (s x s) + (8s + t)</code></pre>
-                <p>Volume (V) prisma segi delapan yaitu:</p>
-                  <pre class="'pre-code"><code>V = Luas alas x tinggi prisma</code></pre>
-                </div>        
-              </section>
+                    <p>Luas (L) permukaan prisma segi delapan (Karena alas dan tutup kongruen):</p>
+                    <div class="math-display">
+                        L = (2 * L_(alas)) + (K_(alas) * t_(prisma))
+                    </div>
+                    <p>Volume (V) prisma segi delapan:</p>
+                    <div class="math-display">
+                        V = L_(alas) * t_(prisma)
+                    </div>
+                </div>
+            </section>
 
             <section id="makna-lain">
-                <h2>3. Proporsi, Kesebangunan, dan Nilai Lain</h2>
+                <h2>2.c Proporsi, Kesebangunan, dan Nilai Lain</h2>
                 <ul>
                     <li>Proporsi: Terlihat dari perbandingan harmonis antara tinggi tiang utama dengan panjang dan lebar rumah. Proporsi ini dibuat agar bangunan tetap stabil terhadap terpaan angin laut, dan mencerminkan keharmonisan antara manusia, alam, dan Sang Pencipta.</li>
                     <li>Kesebangunan: Terlihat pada pola tangga depan dan belakang yang memiliki bentuk serupa namun dengan ukuran berbeda sesuai fungsi penggunaannya.</li>
                     <li>Trigonometri: Prinsip trigonometri sederhana dapat menjelaskan kemiringan tangga yang menunjukkan kesesuaian antara panjang sisi miring dan tinggi vertikal.</li>
-                    <li>Sambulayang (Atap Bertingkat) 
-                        Atap Balla Lompoa terdiri dari lima susun bubungan, menggambarkan lima rukun Islam sekaligus Pancasila.Sambulayang yang memiliki satu tingkatan berarti menandakan penduduk rumah bergolongan Somba. Sambulayang yang memiliki dua tingkatan berarti menandakan penduduk rumah bukan keturunan bangsawan. Sambulayang memiliki tiga tingkatan berarti menandakan penduduk rumah rumah bergolongan Daeng. Sambulayang yang memiliki lima tingkatan berarti menandakan penduduk rumah bergolongan Karaeng dan bermakna rukun Islam.
-                        Hiasan ini terdapat pada bagian irate atau bagian atas dari rumah adat atau berada tepat di bawah ulu tedong. Semakin tinggi status kebangsawanan penghuni rumah maka susunan sambulayang akan semakin banyak. Selain itu Sambulayang juga memiliki fungsi konstruktif yaitu berfungsi sebagai penopan atau penyangga antara atap dengan dinding yang terletak pada bagian depan rumah, sehingga dapat memperkokoh konstruksi banguanan.  Setiap tingkat membentuk segitiga sama kaki dan trapesium, yang menunjukkan penerapan konsep kesimetrian dan kesebangunan.</li>
-                    <li>Ulu Tedong (Ornamen Kepala Kerbau)
-                        Ditempatkan pada puncak atap sebagai simbol kekuatan dan kemakmuran. Dalam konteks etnomatematika, bentuknya mengikuti simetri cermin serta proporsi geometri antara tinggi dan lebar bubungan</li>
+                    <li>Sambulayang (Atap Bertingkat):
+                        Atap Balla Lompoa terdiri dari lima susun bubungan, menggambarkan lima rukun Islam sekaligus Pancasila.
+                        <ul>
+                            <li>Sambulayang 1 tingkat: Golongan Somba.</li>
+                            <li>Sambulayang 2 tingkatan: Bukan keturunan bangsawan.</li>
+                            <li>Sambulayang 3 tingkatan: Golongan Daeng.</li>
+                            <li>Sambulayang 5 tingkatan: Golongan Karaeng (Bangsawan tertinggi) dan bermakna rukun Islam.</li>
+                        </ul>
+                        Hiasan ini terdapat pada bagian irate (atas) atau berada tepat di bawah ulu tedong. Semakin tinggi status kebangsawanan penghuni rumah maka susunan Sambulayang akan semakin banyak. Sambulayang juga memiliki fungsi konstruktif sebagai penopang atau penyangga antara atap dengan dinding. Setiap tingkat membentuk segitiga sama kaki dan trapesium, yang menunjukkan penerapan konsep kesimetrian dan kesebangunan.
+                    </li>
+                    <li>Ulu Tedong (Ornamen Kepala Kerbau): Ditempatkan pada puncak atap sebagai simbol kekuatan dan kemakmuran. Bentuknya mengikuti simetri cermin serta proporsi geometri antara tinggi dan lebar bubungan.</li>
                 </ul>
             </section>
 
             <section id="panorama">
-                <h3>Visualisasi Interaktif (Panorama 360°)</h3>
+                <h2>Visualisasi Interaktif (Panorama 360°)</h2>
                 <p>Bagian ini membantu memvisualisasikan ruang Balla Lompoa Karaeng Galesong secara imersif. Gunakan pointer atau sentuhan untuk menelusuri ruangan.</p>
                 <div class="mini-panorama">
                     <div id="mini-panorama"></div>
                 </div>
-                <p style="text-align: center; color: var(--color-text-muted);"><em>(Tampilan panorama memerlukan file `panos` dan Pannellum JS)</em></p>
+                <p style="text-align: center; color: var(--color-text-muted);"><em>(Tampilan panorama memerlukan file panos dan Pannellum JS)</em></p>
             </section>
 
+            <section id="Penutup">
+                <h2>3. Penutup</h2>
             <section id="kesimpulan">
-                <h2>Kesimpulan</h2>
+                <h2>3.a Kesimpulan</h2>
                 <p>Rumah Adat Balla Lompoa Karaeng Galesong adalah manifestasi dari pengetahuan matematis dan budaya lokal yang diwariskan turun-temurun. Struktur bangunannya menerapkan konsep-konsep geometri (persegi panjang, segitiga, trapesium, belah ketupat), simetri, dan bilangan ganjil yang berakar pada filosofi Sulapa’ Appa’ (empat unsur alam). Kajian etnomatematika ini memperkaya wawasan dan dapat menjadi media pembelajaran yang kontekstual dan berakar pada budaya bangsa.</p>
+                <h2>3.b Saran</h2>
+                <p>Penelitian ini perlu dilanjutkan dengan mengkaji konsep matematika lainnya yang tersembunyi pada struktur rumah, serta melakukan implementasi model pembelajaran etnomatematika berbasis Rumah Adat Karaeng Galesong untuk mengukur efektivitasnya dalam meningkatkan pemahaman konsep matematika dan menumbuhkan apresiasi terhadap budaya lokal.</p>
+            </section>
+
+            <section id="Daftar Pustaka">
+                <h2>4. Daftar Pustaka</h2>
+                <ol>
+        <li>
+            Asdar, A., Rahmawati, R., & Ihsan, H. (<span class="year">2023</span>). <span class="title">Studi etnomatematika: Aktivitas fundamental matematis pada rumah adat Balla Lompoa Karaeng Galesong</span>. Dalam <span class="title">Seminar Nasional Hasil Penelitian 2023: Penguatan Riset, Inovasi, Kreativitas Peneliti di Era 5.0</span> (hlm. 1301–1306). LP2M Universitas Negeri Makassar. <br>
+            <span class="url">https://doi.org/ISBN978-623-387-152-5</span>
+        </li>
+        <li>
+            Ilham. (<span class="year">2018</span>). <span class="title">Kajian estetika ragam hias rumah adat (Balla Lompoa) Galesong Kabupaten Takalar</span> [Skripsi, Universitas Muhammadiyah Makassar]. Fakultas Keguruan dan Ilmu Pendidikan, Universitas Muhammadiyah Makassar.
+        </li>
+        <li>
+            Lincoln, Y. S., & Guba, E. G. (<span class="year">1985</span>). <span class="title">Naturalistic inquiry</span>. Sage Publications.
+        </li>
+        <li>
+            Miles, M. B., & Huberman, A. M. (<span class="year">1994</span>). <span class="title">Qualitative data analysis: An expanded sourcebook</span> (2nd ed.). Sage Publications.
+        </li>
+        <li>
+            Rosa, M., & Orey, D. C. (<span class="year">2016</span>). <span class="title">Ethnomathematics and its diverse approaches for mathematics education</span>. Springer.
+        </li>
+        <li>
+            Spradley, J. P. (<span class="year">1980</span>). <span class="title">Participant observation</span>. Holt, Rinehart and Winston.
+        </li>
+        <li>
+            Syamsuriadi, S., Astina, I. K., & Susilo, S. (<span class="year">2019</span>). <span class="title">Arsitektur Rumah Balla Lompoa Galesong Suku Makassar sebagai sumber materi Geografi Budaya</span>. <span class="title">Jurnal Pendidikan: Teori, Penelitian, dan Pengembangan</span>, <span class="year">4</span>(12), 1601–1609. Universitas Negeri Malang. <br>
+            <span class="url">http://journal.um.ac.id/index.php/jptpp</span>
+        </li>
+    </ol>
             </section>
             
         </article>
@@ -329,4 +390,3 @@
     </script>
 </body>
 </html>
-```
