@@ -9,7 +9,7 @@ html, body {
 }
 
 body {
-  padding-top: 96px;
+  padding-top: 96px; /* Ini memberikan ruang di atas untuk Top Bar */
 }
 
 /* Panorama menyesuaikan tinggi layar */
@@ -36,9 +36,9 @@ body {
 /* Tombol scene */
 .scenes button {
   padding: 6px 10px;
-  border: 1px solid #334155;
-  background: #1e293b;
-  color: #e2e8f0;
+  border: 1px solid #05122b;
+  background: #445570;
+  color: #beb316;
   border-radius: 8px;
   cursor: pointer;
   font-weight: 600;
@@ -57,7 +57,7 @@ body {
 }
 
 .top-bar {
-  position: absolute;
+  position: absolute; /* Posisinya absolut terhadap BODY (yang memiliki padding-top) */
   top: 18px;
   left: 22px;
   right: 22px;
@@ -65,7 +65,7 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 16px;
-  z-index: 1000;
+  z-index: 1500; /* Ditinggikan agar di atas panorama */
 }
 
 .go-home {
@@ -142,6 +142,8 @@ body {
   border-radius: 16px;
   box-shadow: 0 8px 32px rgba(34,211,238,.25);
   background: #fff;
+  /* Tambahan: mencegah klik pada gambar minimap menonaktifkan modal */
+  pointer-events: none; 
 }
 
 .coord-hint {
@@ -158,33 +160,9 @@ body {
   z-index: 5;
   box-shadow: 0 8px 24px rgba(0,0,0,0.35);
 }
-/* 
-.custom-hotspot span {
-  visibility: hidden;
-  position: absolute;
-  border-radius: 3px;
-  background-color: #fff;
-  color: #000;
-  text-align: center;
-  max-width: 200px;
-  padding: 5px 10px;
-  margin-left: -220px;
-  cursor: default;
-}
 
-.custom-hotspot:hover span {
-  visibility: visible;
-}
-
-.custom-hotspot:hover span::after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-width: 10px;
-  border-style: solid;
-  border-color: #fff transparent transparent transparent;
-  bottom: -20px;
-  left: -10px;
-  margin: 0 50%;
-} */
+/* Bagian komentar tentang custom-hotspot di CSS Anda */
+/* .custom-hotspot span { ... }
+.custom-hotspot:hover span { ... }
+.custom-hotspot:hover span::after { ... } 
+*/
